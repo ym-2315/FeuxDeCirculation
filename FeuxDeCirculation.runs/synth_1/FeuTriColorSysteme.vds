@@ -1,0 +1,274 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Apr 11 16:33:04 2025
+# Process ID         : 11568
+# Current directory  : C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.runs/synth_1
+# Command line       : vivado.exe -log FeuTriColorSysteme.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FeuTriColorSysteme.tcl
+# Log file           : C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.runs/synth_1/FeuTriColorSysteme.vds
+# Journal file       : C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-26A9125
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i5-10310U CPU @ 1.70GHz
+# CPU Frequency      : 2208 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16760 MB
+# Swap memory        : 2550 MB
+# Total Virtual      : 19311 MB
+# Available Virtual  : 6820 MB
+#-----------------------------------------------------------
+source FeuTriColorSysteme.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 450.855 ; gain = 142.609
+Command: read_checkpoint -auto_incremental -incremental C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/utils_1/imports/synth_1/FeuTriColorSysteme.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/utils_1/imports/synth_1/FeuTriColorSysteme.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top FeuTriColorSysteme -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3644
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1108.723 ; gain = 468.473
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FeuTriColorSysteme' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/FeuTriColorSysteme.vhd:20]
+	Parameter N bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'ClockDiv' declared at 'C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/ClockDiv.vhd:4' bound to instance 'U1' of component 'ClockDiv' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/FeuTriColorSysteme.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'ClockDiv' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/ClockDiv.vhd:10]
+	Parameter N bound to: 100000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClockDiv' (0#1) [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/ClockDiv.vhd:10]
+	Parameter N bound to: 100000 - type: integer 
+INFO: [Synth 8-3491] module 'ClockDiv' declared at 'C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/ClockDiv.vhd:4' bound to instance 'U2' of component 'ClockDiv' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/FeuTriColorSysteme.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'ClockDiv__parameterized1' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/ClockDiv.vhd:10]
+	Parameter N bound to: 100000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ClockDiv__parameterized1' (0#1) [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/ClockDiv.vhd:10]
+INFO: [Synth 8-3491] module 'FeuxTriColor' declared at 'C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/FeuxTriColor.vhd:6' bound to instance 'U3' of component 'FeuxTriColor' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/FeuTriColorSysteme.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'FeuxTriColor' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/FeuxTriColor.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'FeuxTriColor' (0#1) [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/FeuxTriColor.vhd:22]
+INFO: [Synth 8-3491] module 'Counter2BCD' declared at 'C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/Counter2BCD.vhd:6' bound to instance 'U4' of component 'Counter2BCD' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/FeuTriColorSysteme.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'Counter2BCD' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/Counter2BCD.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'Counter2BCD' (0#1) [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/Counter2BCD.vhd:12]
+INFO: [Synth 8-3491] module 'Counter2BCD' declared at 'C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/Counter2BCD.vhd:6' bound to instance 'U5' of component 'Counter2BCD' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/FeuTriColorSysteme.vhd:115]
+INFO: [Synth 8-3491] module 'Display' declared at 'C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/Display.vhd:4' bound to instance 'U6' of component 'Display' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/FeuTriColorSysteme.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'Display' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/Display.vhd:16]
+INFO: [Synth 8-3491] module 'Binary2Segment' declared at 'C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/Binary2Segment.vhd:4' bound to instance 'DECODER' of component 'Binary2Segment' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/Display.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'Binary2Segment' [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/Binary2Segment.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'Binary2Segment' (0#1) [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/Binary2Segment.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'Display' (0#1) [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/Display.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'FeuTriColorSysteme' (0#1) [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/sources_1/new/FeuTriColorSysteme.vhd:20]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1214.094 ; gain = 573.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1214.094 ; gain = 573.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1214.094 ; gain = 573.844
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1214.094 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/constrs_1/new/basys-3.xdc]
+Finished Parsing XDC File [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/constrs_1/new/basys-3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.srcs/constrs_1/new/basys-3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FeuTriColorSysteme_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FeuTriColorSysteme_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1287.895 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1287.895 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1287.895 ; gain = 647.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1287.895 ; gain = 647.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1287.895 ; gain = 647.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1287.895 ; gain = 647.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   31 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 4     
++---Registers : 
+	               31 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   31 Bit        Muxes := 2     
+	   4 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 3     
+	   5 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1287.895 ; gain = 647.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1404.105 ; gain = 763.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1404.328 ; gain = 764.078
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1415.160 ; gain = 774.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1630.188 ; gain = 989.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1630.188 ; gain = 989.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1630.188 ; gain = 989.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1630.188 ; gain = 989.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1630.188 ; gain = 989.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1630.188 ; gain = 989.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    24|
+|3     |LUT1   |    34|
+|4     |LUT2   |    12|
+|5     |LUT3   |     2|
+|6     |LUT4   |     6|
+|7     |LUT5   |     3|
+|8     |LUT6   |    53|
+|9     |FDCE   |    31|
+|10    |FDPE   |     2|
+|11    |FDRE   |    66|
+|12    |IBUF   |     3|
+|13    |OBUF   |    17|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1630.188 ; gain = 989.938
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 1630.188 ; gain = 916.137
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1630.188 ; gain = 989.938
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1630.188 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1630.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 8f82b59e
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 1630.188 ; gain = 1175.773
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1630.188 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/PC/Vivado/FeuxDeCirculation/FeuxDeCirculation.runs/synth_1/FeuTriColorSysteme.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file FeuTriColorSysteme_utilization_synth.rpt -pb FeuTriColorSysteme_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 11 16:33:53 2025...
